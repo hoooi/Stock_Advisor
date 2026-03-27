@@ -596,7 +596,17 @@ with tab_list:
         if analysis_ran:
             st.warning("조건에 맞는 종목이 없습니다. 사이드바에서 분석 조건을 확인하세요.")
         else:
-            st.info("좌측 사이드바에서 **분석 시작** 버튼을 눌러주세요.")
+            st.markdown("""
+            <div style="display:flex;flex-direction:column;align-items:center;
+                justify-content:center;padding:60px 20px;gap:12px;">
+              <div style="font-size:1.8rem;">🔍</div>
+              <div style="font-size:1.25rem;font-weight:700;color:#0f172a;">분석을 시작해보세요</div>
+              <div style="font-size:0.9rem;color:#64748b;text-align:center;line-height:1.8;">
+                좌측 사이드바에서 <strong>분석 시작</strong> 버튼을 눌러주세요<br>
+                시총 상위 200개 종목을 분석합니다 (약 1-2분 소요)
+              </div>
+            </div>
+            """, unsafe_allow_html=True)
     else:
         st.markdown(f"""
         <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);

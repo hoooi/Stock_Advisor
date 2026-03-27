@@ -37,7 +37,7 @@ MIN_VOLUME_SURGE  = 0.3   # 거래량 20일 평균 대비 배수 (완화: 0.3배
 MIN_PRICE         = 1000  # 최소 주가 (동전주 제외)
 MAX_PRICE         = 500000
 MIN_MARKET_CAP    = 100   # 최소 시총 (억원)
-MAX_SCAN_STOCKS   = 200   # 스캔할 최대 종목 수 (시총 상위 N개)
+MAX_SCAN_STOCKS   = 100   # 스캔할 최대 종목 수 (시총 상위 N개)
 MAX_RSI           = 85    # RSI 이 값 초과 종목 제외 (완화)
 MIN_MACD_HIST     = -2000  # MACD 히스토그램 이 값 미만 종목 제외 (완화)
 

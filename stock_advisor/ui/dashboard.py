@@ -78,6 +78,10 @@ button[kind="header"]                   { display: none !important; }
     visibility: visible !important;
 }
 
+/* 사이드바 위젯 배경 카드 통합 */
+section[data-testid="stSidebar"] [data-testid="stSlider"] { background: #ffffff; }
+section[data-testid="stSidebar"] [data-testid="stCaptionContainer"] { background: #ffffff; }
+
 /* ── 분석 시작 버튼 파란색 ── */
 section[data-testid="stSidebar"] div[data-testid="stButton"] > button,
 section[data-testid="stSidebar"] div[data-testid="stButton"] > button:hover {
@@ -631,7 +635,7 @@ with tab_list:
         for rank, (_, row) in enumerate(result_df.iterrows(), 1):
             _render_card(rank, row, saved_inv)
 
-        with st.expander("전체 데이터 테이블"):
+        with st.expander("전체 데이터 테이블", expanded=True):
             cols = ["ticker","name","market","price","change_rate","score","rsi",
                     "volume_ratio","entry_low","entry_high","stop_loss","target1","target2","risk_reward"]
             st.dataframe(

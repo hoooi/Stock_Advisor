@@ -172,15 +172,9 @@ toy-project/
 
 ## 테스트
 
-```bash
-# 단일 종목 빠른 테스트
-python test_single.py
-
-# 스크리닝 전체 테스트
-python test_screener.py
-
-# stock_advisor_pro 단위 테스트
-pytest stock_advisor_pro/tests/
+```
+# 스톡 스크리닝 테스트
+python dashboard_v2
 ```
 
 ---

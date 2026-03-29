@@ -52,7 +52,8 @@ pip install -r requirements.txt
 
 ```bash
 # 웹 대시보드
-streamlit run stock_advisor/ui/dashboard.py --server.port 8501
+cd stock_advisor
+python -m streamlit run ui/dashboard_v2.py
 
 # CLI
 cd stock_advisor
